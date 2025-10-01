@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks">
+    <meta property="og:title" content="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks" />
+    <meta property="og:description" content="We introduce ImagenWorld, a 3.6K-condition benchmark with 20K human annotations for evaluating image generation and editing across six tasks and domains, offering fine-grained, explainable error analysis beyond automated VLM metrics." />
+    <meta property="og:url" content="https://github.com/TIGER-AI-Lab/Critique-Coder" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <title>ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks</h1>
+                        <!-- <img src="static/images/banner.png" width="75%" alt="ImagenHub" /> -->
+                        <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                            <sup>1*</sup>Samin Mahdizadeh Sani,
+                        </span>
+                        <span class="author-block">
+                            <sup>1*†♠</sup>Max Ku,
+                        </span>
+                        <span class="author-block">
+                            <sup>1</sup>Nima Jamali,
+                        </span>
+                        <span class="author-block">
+                            <sup>1</sup>Matina Mahdizadeh Sani,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Paria Khoshtab,
+                        </span>
+                        <span class="author-block">
+                            <sup>2</sup>Wei-Chieh Sun,
+                        </span>
+                        <span class="author-block">
+                            <sup>3</sup>Parnian Fazel,
+                        </span>
+                        <span class="author-block">
+                            <sup>4</sup>Zhi Rui Tam,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Thomas Chong,
+                        </span>
+                        <span class="author-block">
+                            <sup>5</sup>Edisy Kin Wai Chan,
+                        </span>
+                        <span class="author-block">
+                            <sup>6</sup>Donald Wai Tong Tsang,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Chiao-Wei Hsu,
+                        </span>
+                        <span class="author-block">
+                            <sup>7</sup>Lam Ting Wai,
+                        </span>
+                        <span class="author-block">
+                            <sup>8</sup>Ho Yin Sam Ng,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Chiafeng Chu,
+                        </span>
+                        <span class="author-block">
+                            <sup>9</sup>Chak-Wing Mak,
+                        </span>
+                        <span class="author-block">
+                            <sup>a</sup>Keming Wu,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Hiu Tung Wong,
+                        </span>
+                        <span class="author-block">
+                            <sup>7</sup>Yik Chun Ho,
+                        </span>
+                        <span class="author-block">
+                            <sup>1</sup>Chi Ruan,
+                        </span>
+                        <span class="author-block">
+                            <sup>b</sup>Zhuofeng Li,
+                        </span>
+                        <span class="author-block">
+                            <sup>c</sup>I-Sheng Fang,
+                        </span>
+                        <span class="author-block">
+                            <sup>d</sup>Shih-Ying Yeh,
+                        </span>
+                        <span class="author-block">
+                            <sup>e</sup>Ho Kei Cheng,
+                        </span>
+                        <span class="author-block">
+                            <sup>♦</sup>Ping Nie,
+                        </span>
+                        <span class="author-block">
+                            <sup>†♠</sup>Wenhu Chen
+                        </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                        <span class="author-block"><small>
+                            <sup>1</sup>University of Waterloo,
+                            <sup>2</sup>University of Washington,
+                            <sup>3</sup>Imperial College,
+                            <sup>4</sup>National Taiwan University,
+                            <sup>5</sup>University of Southampton,
+                            <sup>6</sup>University of British Columbia,
+                            <sup>7</sup>Chinese University of Hong Kong,
+                            <sup>8</sup>Pennsylvania State University,
+                            <sup>9</sup>Peking University,
+                            <sup>a</sup>Tsinghua University,
+                            <sup>b</sup>Texas A&amp;M University,
+                            <sup>c</sup>Academia Sinica,
+                            <sup>d</sup>NTHU,
+                            <sup>e</sup>University of Illinois Urbana-Champaign,
+                            <sup>♠</sup>Vector Institute,
+                            <sup>♦</sup>Independent
+                            </small>
+                        </span>
+                        <span class="author-block"><small><a href="mailto:samin.mahdizadeh@gmail.com">samin.mahdizadeh@gmail.com</a>,</small></span>
+                        <span class="author-block"><small><a href="mailto:m3ku@uwaterloo.ca">m3ku@uwaterloo.ca</a>,</small></span>
+                        <span class="author-block"><small><a href="mailto:wenhuchen@uwaterloo.ca">wenhuchen@uwaterloo.ca</a></small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                           <!-- <h2 class="title is-5">ICLR 2024</h2> -->
+                            <div class="publication-links">
+                                <span class="link-block">
+                          <a href="" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            🤗
+                          </span>
+                                <span>Dataset</span>
+                                </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                      <a href="https://github.com/TIGER-AI-Lab/ImagenHub" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                                <span>Code</span>
+                                </a>
+                                </span>
+
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                    <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                                <span>arXiv</span>
+                                </a>
+                                </span>
+
+                                <span class="link-block">
+                                    <a href="" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                              <span>🖼️🏛️ Visualization</span>
+                                              </a>
+                                </span>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+            <div class="container" style="margin-bottom: 2vh;margin-top: -6vh;">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Advances in diffusion, autoregressive, and hybrid models have enabled high-quality image synthesis for tasks such as text-to-image, editing, and reference-guided composition. Yet, existing benchmarks remain limited, either focus on isolated tasks, cover only narrow domains, or provide opaque scores without explaining failure modes. We introduce \textbf{ImagenWorld}, a benchmark of 3.6K condition sets spanning six core tasks (generation and editing, with single or multiple references) and six topical domains (artworks, photorealistic images, information graphics, textual graphics, computer graphics, and screenshots). The benchmark is supported by 20K fine-grained human annotations and an explainable evaluation schema that tags localized object-level and segment-level errors, complementing automated VLM-based metrics. Our large-scale evaluation of 14 models yields several insights: (1) models typically struggle more in editing tasks than in generation tasks, especially in local edits. (2) models excel in artistic and photorealistic settings but struggle with symbolic and text-heavy domains such as screenshots and information graphics. (3) closed-source systems lead overall, while targeted data curation (e.g., Qwen-Image) narrows the gap in text-heavy cases. (4) modern VLM-based metrics achieve Kendall accuracies up to 0.79, approximating human ranking, but fall short of fine-grained, explainable error attribution. ImagenWorld provides both a rigorous benchmark and a diagnostic tool to advance robust image generation.   </p>
+                </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+        </div>
+    </section>
+
+        <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+          <h1 class="title is-1 critique-coder">
+            <span class="critique-coder">ImagenWorld</span>
+          </h1>
+        </div>
+    </section>
+
+
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container  is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Overview</h2>
+                        <div class="item">
+                            <p style="margin-bottom: 12px;">We introduce ImagenWorld, a large-scale, human-centric benchmark designed to stress-test image generation models in real-world scenarios. Unlike prior evaluations that focus on isolated tasks or narrow domains, ImagenWorld is organized into six domains: Artworks, Photorealistic Images, Information Graphics, Textual Graphics, Computer Graphics, and Screenshots, and six tasks: Text-to-Image Generation (TIG), Single-Reference Image Generation (SRIG), Multi-Reference Image Generation (MRIG), Text-to-Image Editing (TIE), Single-Reference Image Editing (SRIE), and Multi-Reference Image Editing (MRIE). The benchmark includes 3.6K condition sets and 20K fine-grained human annotations, providing a comprehensive testbed for generative models. To support explainable evaluation, ImagenWorld applies object- and segment-level extraction to generated outputs, identifying entities such as objects and fine-grained regions. This structured decomposition enables human annotators to provide not only scalar ratings but also detailed tags of object-level and segment-level failures.</p>
+                            <img src="static/images/overview.PNG" alt="MY ALT TEXT" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container  is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Dataset Preview</h2>
+                        <div class="item">
+                            <img src="static/images/dataset.PNG" style="width: 80%; height: auto;" alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 1: Illustrative samples from our dataset across six tasks: Text-to-Image Generation (TIG), Single-Reference Image Generation (SRIG), Multi-Reference Image Generation (MRIG), Text-to-Image Editing (TIE), Single-Reference Image Editing (SRIE), and Multi-Reference Image Editing (MRIE). For each task, we show both a successful generation (green) and a failure case (red).
+                            </h2>
+
+                            <img src="static/images/explain-tag.PNG" style="width: 70%; height: auto;" alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 2: Examples include object-level issues, where expected objects are missing or distorted, and segment-level issues, where annotated regions highlight specific regions with visual inconsistencies that affect evaluation scores.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container  is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Overall Results</h2>
+                        <div class="item">
+                            <img src="static/images/metric.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 3: Mean human evaluation scores across our four metrics by topic (left) and task (right).
+                            </h2>
+
+                            <img src="static/images/unified.PNG" style="width: 90%; height: auto;" alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 4: Overall human rating by task and topic for the four unified models that support all six tasks.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container  is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Common Failure Modes</h2>
+                        <div class="item">
+                            <h2><p><b>1. Failing to Precisely Follow Instructions</b></p></h2>
+                            <p>Prompt:</p>
+                            <p>Edit image 1. Replace the top-left crate with the yellow warning sign from image 3. Place the pink crewmate (from the center of image 2) and the yellow crewmate (from the bottom right of image 2) standing side-by-side on the central doorway in image 1. Ensure all new elements are integrated with correct perspective, lighting, and scale.</p>
+                            <img src="static/images/fail1.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 5: Instruction-following problem: The model placed red and green crewmates instead of pink and yellow, and the yellow sign’s position does not match the request.
+
+                            <h2><p><b>2. Numerical Inconsistencies</b></p></h2>
+                            <img src="static/images/fail2.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle" style="text-align:center;">
+                                Figure 6: Examples of numerical inconsistencies.
+
+                            <h2><p><b>3. Segments and Labeling Issues</b></p></h2>
+                            <img src="static/images/fail3.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle" style="text-align:center;">
+                                Figure 7: Examples of labeling issues.
+                            </h2>
+
+                            <h2><p><b>4. Generating New Image in Editing</b></p></h2>
+                            <img src="static/images/fail6.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle" style="text-align:center;">
+                                Figure 8: Examples of generating a new image when the task is editing.
+                            </h2>
+
+                            <h2><p><b>5. Plots and chart errors</b></p></h2>
+                            <img src="static/images/fail4.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle" style="text-align:center;">
+                                Figure 9: Examples of plots and diagram issues.
+                            </h2>
+
+                            <h2><p><b>6. Unreadable Text</b></p></h2>
+                            <img src="static/images/fail5.PNG"  alt="MY ALT TEXT" />
+                            <h2 class="subtitle"style="text-align:center;" >
+                                Figure 10: Examples of text issues.
+                            </h2>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Citation</h2>
+            Please kindly cite our paper if you use our code, data, models or results:
+            <br><br>
+            <pre><code>@inproceedings{}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a>                            project page. You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<style>
+    .buttonGroup {
+        text-align: center;
+    }
+    
+    .buttonGroup>button {
+        padding: 15px;
+        color: white;
+        background-color: #363636;
+        border-radius: 5px;
+    }
+    
+    .buttonGroup>button:hover {
+        box-shadow: 5px;
+    }
+</style>
+
+</html>
