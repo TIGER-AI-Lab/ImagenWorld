@@ -25,14 +25,14 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks</h1>
-                        <!-- <img src="static/images/banner.png" width="75%" alt="ImagenHub" /> -->
+                        <img src="static/images/psudo_banner.png" width="75%" alt="ImagenWorld" />
                         <div class="is-size-5 publication-authors">
                         <!-- Paper authors -->
                         <span class="author-block">
-                            <sup>1*</sup>Samin Mahdizadeh Sani,
+                            <sup>1</sup><a href="https://openreview.net/profile?id=~Samin_Mahdizadeh_Sani1" target="_blank"></a>Samin Mahdizadeh Sani</a>*,
                         </span>
                         <span class="author-block">
-                            <sup>1♠*</sup>Max Ku,
+                            <sup>1♠</sup><a href="https://kuwingfung.github.io/" target="_blank">Max Ku</a>*,
                         </span>
                         <span class="author-block">
                             <sup>1</sup>Nima Jamali,
@@ -50,7 +50,7 @@
                             <sup>3</sup>Parnian Fazel,
                         </span>
                         <span class="author-block">
-                            <sup>4</sup>Zhi Rui Tam,
+                            <sup>4</sup><a href="https://zrt.wtf/" target="_blank">Zhi Rui Tam</a>,
                         </span>
                         <span class="author-block">
                             <sup>♦</sup>Thomas Chong,
@@ -62,7 +62,7 @@
                             <sup>6</sup>Donald Wai Tong Tsang,
                         </span>
                         <span class="author-block">
-                            <sup>♦</sup>Chiao-Wei Hsu,
+                            <sup>♦</sup><a href="https://chiaoweihsu.com/" target="_blank">Chiao-Wei Hsu</a>,
                         </span>
                         <span class="author-block">
                             <sup>7</sup>Lam Ting Wai,
@@ -77,7 +77,7 @@
                             <sup>9</sup>Chak-Wing Mak,
                         </span>
                         <span class="author-block">
-                            <sup>a</sup>Keming Wu,
+                            <sup>a</sup><a href="https://kemingwu.github.io/" target="_blank">Keming Wu</a>,
                         </span>
                         <span class="author-block">
                             <sup>♦</sup>Hiu Tung Wong,
@@ -89,22 +89,22 @@
                             <sup>1</sup>Chi Ruan,
                         </span>
                         <span class="author-block">
-                            <sup>b</sup>Zhuofeng Li,
+                            <sup>b</sup><a href="https://zhuofeng-li.github.io/" target="_blank">Zhuofeng Li</a>,
                         </span>
                         <span class="author-block">
-                            <sup>c</sup>I-Sheng Fang,
+                            <sup>c</sup><a href="https://ishengfang.github.io/" target="_blank">I-Sheng Fang</a>,
                         </span>
                         <span class="author-block">
-                            <sup>d</sup>Shih-Ying Yeh,
+                            <sup>d</sup><a href="https://kblueleaf.net/" target="_blank">Shih-Ying Yeh</a>,
                         </span>
                         <span class="author-block">
-                            <sup>e</sup>Ho Kei Cheng,
+                            <sup>e</sup><a href="https://hkchengrex.com/" target="_blank">Ho Kei Cheng</a>,
                         </span>
                         <span class="author-block">
                             <sup>♦</sup>Ping Nie,
                         </span>
                         <span class="author-block">
-                            <sup>1♠</sup>Wenhu Chen
+                            <sup>1♠</sup><a href="https://wenhuchen.github.io/" target="_blank">Wenhu Chen</a>
                         </span>
                         </div>
 
@@ -148,7 +148,7 @@
 
                                 <!-- Github link -->
                                 <span class="link-block">
-                      <a href="https://github.com/TIGER-AI-Lab/ImagenHub" target="_blank"
+                      <a href="https://github.com/TIGER-AI-Lab/ImagenWorld" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -192,7 +192,7 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Advances in diffusion, autoregressive, and hybrid models have enabled high-quality image synthesis for tasks such as text-to-image, editing, and reference-guided composition. Yet, existing benchmarks remain limited, either focus on isolated tasks, cover only narrow domains, or provide opaque scores without explaining failure modes. We introduce \textbf{ImagenWorld}, a benchmark of 3.6K condition sets spanning six core tasks (generation and editing, with single or multiple references) and six topical domains (artworks, photorealistic images, information graphics, textual graphics, computer graphics, and screenshots). The benchmark is supported by 20K fine-grained human annotations and an explainable evaluation schema that tags localized object-level and segment-level errors, complementing automated VLM-based metrics. Our large-scale evaluation of 14 models yields several insights: (1) models typically struggle more in editing tasks than in generation tasks, especially in local edits. (2) models excel in artistic and photorealistic settings but struggle with symbolic and text-heavy domains such as screenshots and information graphics. (3) closed-source systems lead overall, while targeted data curation (e.g., Qwen-Image) narrows the gap in text-heavy cases. (4) modern VLM-based metrics achieve Kendall accuracies up to 0.79, approximating human ranking, but fall short of fine-grained, explainable error attribution. ImagenWorld provides both a rigorous benchmark and a diagnostic tool to advance robust image generation.   </p>
+                        Advances in diffusion, autoregressive, and hybrid models have enabled high-quality image synthesis for tasks such as text-to-image, editing, and reference-guided composition. Yet, existing benchmarks remain limited, either focus on isolated tasks, cover only narrow domains, or provide opaque scores without explaining failure modes. We introduce ImagenWorld, a benchmark of 3.6K condition sets spanning six core tasks (generation and editing, with single or multiple references) and six topical domains (artworks, photorealistic images, information graphics, textual graphics, computer graphics, and screenshots). The benchmark is supported by 20K fine-grained human annotations and an explainable evaluation schema that tags localized object-level and segment-level errors, complementing automated VLM-based metrics. Our large-scale evaluation of 14 models yields several insights: (1) models typically struggle more in editing tasks than in generation tasks, especially in local edits. (2) models excel in artistic and photorealistic settings but struggle with symbolic and text-heavy domains such as screenshots and information graphics. (3) closed-source systems lead overall, while targeted data curation (e.g., Qwen-Image) narrows the gap in text-heavy cases. (4) modern VLM-based metrics achieve Kendall accuracies up to 0.79, approximating human ranking, but fall short of fine-grained, explainable error attribution. ImagenWorld provides both a rigorous benchmark and a diagnostic tool to advance robust image generation.   </p>
                 </div>
                 </div>
             </div>
@@ -233,6 +233,7 @@
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
                         <h2 class="title is-3">Dataset Preview</h2>
+                        <h2 class="subtitle">We build a diverse benchmark covering 6 topics x 6 tasks = 36 areas, and we annotated over 20K images in total, each provided object-level and segment-level annotations to localize the errors.</h2>
                         <div class="item">
                             <img src="static/images/dataset.PNG" style="width: 80%; height: auto;" alt="MY ALT TEXT" />
                             <h2 class="subtitle">
