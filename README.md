@@ -5,13 +5,12 @@ ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evalu
 
 
 
-<div align="center">
+<p align="center">
 <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/psudo_banner.png" width="40%">
-</div>
+</p>
 
 
 **ImagenWorld** is a large-scale, human-centric benchmark designed to stress-test image generation models in real-world scenarios.  
-
 - **Broad coverage across 6 domains:** Artworks, Photorealistic Images, Information Graphics, Textual Graphics, Computer Graphics, and Screenshots.
 - **Rich supervision:** ~3.6K condition sets and ~20K fine-grained human annotations enable comprehensive, reproducible evaluation.
 - **Explainable evaluation pipeline:** We decompose generated outputs via object/segment extraction to identify entities (objects, fine-grained regions), supporting both scalar ratings and object-/segment-level failure tags.
@@ -28,7 +27,7 @@ In this paper, We introduce **ImagenWorld**, a large-scale, human-centric benchm
 
 
 <p align="center">
-  <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/overview.PNG" alt="Teaser" width="900"/>
+  <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/overview.PNG" alt="Teaser" width="70%"/>
 </p>
 
 ---
