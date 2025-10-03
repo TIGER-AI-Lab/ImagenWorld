@@ -1,4 +1,4 @@
-# 🖼️ ImageWorld 
+# 🖼️ ImagenWorld 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.01596-b31b1b.svg)]()
 
 ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks
