@@ -137,7 +137,7 @@
                            <!-- <h2 class="title is-5">ICLR 2024</h2> -->
                             <div class="publication-links">
                                 <span class="link-block">
-                          <a href="" target="_blank"
+                          <a href="https://huggingface.co/datasets/TIGER-Lab/ImagenWorld" target="_blank"
                           class="external-link button is-normal is-rounded is-dark">
                           <span class="icon">
                             🤗
@@ -267,6 +267,13 @@
                     <div class="column is-four-fifths">
                         <h2 class="title is-3">Overall Results</h2>
                         <div class="item">
+                            <ul style="margin-bottom: 14px; list-style: disc; list-style-position: outside; padding-left: 1.25rem; text-align: left;">
+                            <li>
+                                Across ImagenWorld, models struggle primarily with editing (TIE/SRIE/MRIE) compared to generation (TIG/SRIG/MRIG). 
+                                Performance peaks on Artworks and Photorealistic images, whereas Information Graphics and Screenshots are most 
+                                challenging due to their symbolic content and text-heavy, structured layouts.
+                            </li>
+                            </ul>
                             <img src="static/images/metric.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle">
                                 Figure 3: Mean human evaluation scores across our four metrics by topic (left) and task (right).
@@ -275,6 +282,17 @@
                             <img src="static/images/unified.PNG" style="width: 90%; height: auto;" alt="MY ALT TEXT" />
                             <h2 class="subtitle">
                                 Figure 4: Overall human rating by task and topic for the four unified models that support all six tasks.
+                            </h2>
+
+                            <ul style="margin-bottom: 14px; list-style: disc; list-style-position: outside; padding-left: 1.25rem; text-align: left;">
+                            <li>
+                               Models struggle to execute localized edits reliably: AR–diffusion hybrids often overwrite the input with a new image, while diffusion editors struggle in the opposite way, frequently doing nothing and leaving the input unchanged.
+                            </li>
+                            </ul>
+
+                            <img src="static/images/arch.png" style="width: 90%; height: auto;" alt="MY ALT TEXT" />
+                            <h2 class="subtitle">
+                                Figure 5: Percentage of cases where the model generating completely new image or simply return input in image editing tasks.
                             </h2>
                         </div>
                     </div>
@@ -295,35 +313,35 @@
                             <p>Edit image 1. Replace the top-left crate with the yellow warning sign from image 3. Place the pink crewmate (from the center of image 2) and the yellow crewmate (from the bottom right of image 2) standing side-by-side on the central doorway in image 1. Ensure all new elements are integrated with correct perspective, lighting, and scale.</p>
                             <img src="static/images/fail1.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle">
-                                Figure 5: Instruction-following problem: The model placed red and green crewmates instead of pink and yellow, and the yellow sign’s position does not match the request.
+                                Figure 6: Instruction-following problem: The model placed red and green crewmates instead of pink and yellow, and the yellow sign’s position does not match the request.
 
                             <h2><p><b>2. Numerical Inconsistencies</b></p></h2>
                             <img src="static/images/fail2.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle" style="text-align:center;">
-                                Figure 6: Examples of numerical inconsistencies.
+                                Figure 7: Examples of numerical inconsistencies.
 
                             <h2><p><b>3. Segments and Labeling Issues</b></p></h2>
                             <img src="static/images/fail3.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle" style="text-align:center;">
-                                Figure 7: Examples of labeling issues.
+                                Figure 8: Examples of labeling issues.
                             </h2>
 
                             <h2><p><b>4. Generating New Image in Editing</b></p></h2>
                             <img src="static/images/fail6.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle" style="text-align:center;">
-                                Figure 8: Examples of generating a new image when the task is editing.
+                                Figure 9: Examples of generating a new image when the task is editing.
                             </h2>
 
                             <h2><p><b>5. Plots and chart errors</b></p></h2>
                             <img src="static/images/fail4.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle" style="text-align:center;">
-                                Figure 9: Examples of plots and diagram issues.
+                                Figure 10: Examples of plots and diagram issues.
                             </h2>
 
                             <h2><p><b>6. Unreadable Text</b></p></h2>
                             <img src="static/images/fail5.PNG"  alt="MY ALT TEXT" />
                             <h2 class="subtitle"style="text-align:center;" >
-                                Figure 10: Examples of text issues.
+                                Figure 11: Examples of text issues.
                             </h2>
 
                             
