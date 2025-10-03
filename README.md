@@ -30,7 +30,17 @@ In this paper, We introduce **ImagenWorld**, a large-scale, human-centric benchm
   <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/overview.PNG" alt="Teaser" width="70%"/>
 </p>
 
----
-## ⭐ Star History [🔝](#-table-of-contents)
+## 🚀 Release Plan
 
-[![Star History Chart](https://api.star-history.com/svg?repos=TIGER-AI-Lab/ImagenWorld&type=Date)](https://star-history.com/#TIGER-AI-Lab/ImagenWorld&Date)
+We will release the evaluation scripts and annotated masks. 
+
+Stay tuned for updates\!
+
+
+## Citation
+
+If you find our work useful for your research, please consider citing our paper:
+
+```bibtex
+@article{
+}
