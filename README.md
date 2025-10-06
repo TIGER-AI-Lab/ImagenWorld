@@ -17,7 +17,7 @@ ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evalu
 - **Diverse model suite:** We evaluate **14 models** in total — **4 unified** (GPT-Image-1, Gemini 2.0 Flash, BAGEL, OmniGen2) and **10 task-specific** baselines (SDXL, Flux.1-Krea-dev, Flux.1-Kontext-dev, Qwen-Image, Infinity, Janus Pro, UNO, Step1X-Edit, IC-Edit, InstructPix2Pix).
 
 <div align="center">
- <a href = "https://tiger-ai-lab.github.io/ImagenWorld/">[🌐 Project Page]</a> <a href = "">[📄 Arxiv]</a> <a href = "https://huggingface.co/datasets/TIGER-Lab/ImagenWorld">[💾 Datasets]</a> <a href = "">[🏛️ ImagenMuseum]</a>
+ <a href = "https://tiger-ai-lab.github.io/ImagenWorld/">[🌐 Project Page]</a> <a href = "">[📄 Arxiv]</a> <a href = "https://huggingface.co/datasets/TIGER-Lab/ImagenWorld">[💾 Datasets]</a> <a href = "https://huggingface.co/spaces/TIGER-Lab/ImagenWorld-Visualizer">[🏛️ ImagenMuseum]</a>
 </div>
 
 ## 📖 Introduction
