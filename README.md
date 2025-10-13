@@ -42,5 +42,12 @@ Stay tuned for updates\!
 If you find our work useful for your research, please consider citing our paper:
 
 ```bibtex
-@article{
+@misc{imagenworld2025,
+  title        = {ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks},
+  author       = {Samin Mahdizadeh Sani and Max Ku and Nima Jamali and Matina Mahdizadeh Sani and Paria Khoshtab and Wei-Chieh Sun and Parnian Fazel and Zhi Rui Tam and Thomas Chong and Edisy Kin Wai Chan and Donald Wai Tong Tsang and Chiao-Wei Hsu and Ting Wai Lam and Ho Yin Sam Ng and Chiafeng Chu and Chak-Wing Mak and Keming Wu and Hiu Tung Wong and Yik Chun Ho and Chi Ruan and Zhuofeng Li and I-Sheng Fang and Shih-Ying Yeh and Ho Kei Cheng and Ping Nie and Wenhu Chen},
+  year         = {2025},
+  doi          = {10.5281/zenodo.17344183},
+  url          = {https://zenodo.org/records/17344183},
+  note         = {Community-driven dataset and benchmark release, Temporarily archived on Zenodo while arXiv submission is under moderation review.},
 }
+```
