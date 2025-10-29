@@ -30,11 +30,98 @@ In this paper, We introduce **ImagenWorld**, a large-scale, human-centric benchm
   <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/overview.PNG" alt="Teaser" width="70%"/>
 </p>
 
-## 🚀 Release Plan
+# Inference Quick Start
 
-We will release the evaluation scripts and annotated masks. 
+> **Tasks:** `TIG` (Text→Image Generation), `TIE` (Text→Image Editing), `SRIG`, `SRIE`, `MRIG`, `MRIE`  
+> **Datasets:** assumes `ImagenWorld/<TASK>/...` layout (adjust `--task_path` as needed)
 
-Stay tuned for updates\!
+---
+
+## Open-Source Models
+
+**Directory:** `inference/open-source/`  
+**Entrypoint:** `main.py`  
+**Model registry:** `inference/open-source/config.py`  
+**Batch helper:** `open_models.sh`  
+
+All open-source and close-source runners follow a unified CLI:
+```bash
+python main.py   --task <TASK>   --model <MODEL>   --task_path <DATASET_PATH>   --limit <N> --verbose
+```
+
+### 🔹 Example: TIG (Text→Image Generation) with UNO
+```bash
+cd inference/open-source
+
+python main.py   --task TIG   --model UNO   --task_path /path/to/ImagenWorld/TIG   --limit 5 --verbose
+```
+
+**Explanation**
+- Loads the **UNO** open-source generator from the registry (`config.py`)  
+- Runs the **TIG** (Text→Image Generation) task using samples from `/path/to/ImagenWorld/TIG`  
+- Saves results to `model_outputs/model_name.png` 
+- Prints per-sample logs if `--verbose` is enabled  
+
+---
+
+## Closed-Source Models
+
+**Directory:** `inference/closed-source/`  
+**Entrypoint:** `main.py`  
+**Model registry:** `inference/closed-source/config.py`  
+**Batch helper:** `closed_models.sh`  
+
+Available closed-source APIs and outputs:
+- `GPT-Image-1` → saves `gpt-image-1.png`  
+- `Gemini2Flash` → saves `gemini.png`
+
+### 🔧 Setup Environment
+Set your API keys before running:
+```bash
+export OPENAI_API_KEY="sk-..."     # for GPT-Image-1
+export GEMINI_API_KEY="..."        # for Gemini 2.5 Flash Image Preview
+```
+
+### 🔹 Example: TIG (Text→Image Generation) with GPT-Image-1
+```bash
+cd inference/closed-source
+
+python main.py   --task TIG   --model GPT-Image-1   --task_path /path/to/ImagenWorld/TIG   --limit 5 --verbose
+```
+
+### 🔹 Example: TIE (Text→Image Editing) with Gemini 2.5 Flash
+```bash
+cd inference/closed-source
+
+python main.py   --task TIE   --model Gemini2Flash   --task_path /path/to/ImagenWorld/TIE   --limit 5 --verbose
+```
+
+**Explanation**
+- Loads the selected **closed-source API model** (via OpenAI or Gemini)  
+- Runs the specified task on samples from `/path/to/ImagenWorld/<TASK>`  
+- Stores generated images (e.g., `gpt-image-1.png`, `gemini.png`)  
+
+---
+
+## Batch Execution (Optional)
+
+Each inference type includes a shell helper for multi-task runs:
+
+```bash
+# open-source batch
+cd inference/open-source
+bash open_models.sh
+
+# closed-source batch
+cd inference/closed-source
+bash closed_models.sh
+```
+
+In both scripts:
+- Set `BASE_PATH` → dataset root (e.g., `/path/to/ImagenWorld`)  
+- Define `TASK_MODELS` to map each task to a model  
+- Use environment variables for API keys (avoid hardcoding)
+
 
 
 ## Citation
