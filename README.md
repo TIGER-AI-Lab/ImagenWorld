@@ -86,13 +86,6 @@ export OPENAI_API_KEY="sk-..."     # for GPT-Image-1
 export GEMINI_API_KEY="..."        # for Gemini 2.5 Flash Image Preview
 ```
 
-### 🔹 Example: TIG (Text→Image Generation) with GPT-Image-1
-```bash
-cd inference/closed-source
-
-python main.py   --task TIG   --model GPT-Image-1   --task_path /path/to/ImagenWorld/TIG   --limit 5 --verbose
-```
-
 ### 🔹 Example: TIE (Text→Image Editing) with Gemini 2.5 Flash
 ```bash
 cd inference/closed-source
