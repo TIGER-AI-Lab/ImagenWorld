@@ -41,7 +41,7 @@ In this paper, We introduce **ImagenWorld**, a large-scale, human-centric benchm
 
 ---
 
-## Open-Source Models
+### Open-Source Models
 
 **Directory:** `inference/open-source/`  
 **Entrypoint:** `main.py`  
@@ -53,7 +53,7 @@ All open-source and close-source runners follow a unified CLI:
 python main.py   --task <TASK>   --model <MODEL>   --task_path <DATASET_PATH>   --limit <N> --verbose
 ```
 
-### 🔹 Example: TIG (Text→Image Generation) with UNO
+#### 🔹 Example: TIG (Text→Image Generation) with UNO
 ```bash
 cd inference/open-source
 
@@ -68,7 +68,7 @@ python main.py   --task TIG   --model UNO   --task_path /path/to/ImagenWorld/TIG
 
 ---
 
-## Closed-Source Models
+### Closed-Source Models
 
 **Directory:** `inference/closed-source/`  
 **Entrypoint:** `main.py`  
@@ -79,14 +79,14 @@ Available closed-source APIs and outputs:
 - `GPT-Image-1` → saves `gpt-image-1.png`  
 - `Gemini2Flash` → saves `gemini.png`
 
-### 🔧 Setup Environment
+#### 🔧 Setup Environment
 Set your API keys before running:
 ```bash
 export OPENAI_API_KEY="sk-..."     # for GPT-Image-1
 export GEMINI_API_KEY="..."        # for Gemini 2.5 Flash Image Preview
 ```
 
-### 🔹 Example: TIE (Text→Image Editing) with Gemini 2.5 Flash
+#### 🔹 Example: TIE (Text→Image Editing) with Gemini 2.5 Flash
 ```bash
 cd inference/closed-source
 
@@ -100,7 +100,7 @@ python main.py   --task TIE   --model Gemini2Flash   --task_path /path/to/Imagen
 
 ---
 
-## Batch Execution (Optional)
+### Batch Execution (Optional)
 
 Each inference type includes a shell helper for multi-task runs:
 
