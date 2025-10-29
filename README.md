@@ -20,6 +20,10 @@ ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evalu
  <a href = "https://tiger-ai-lab.github.io/ImagenWorld/">[🌐 Project Page]</a> <a href = "https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/preprint.pdf">[📄 Preprint]</a> <a href = "https://huggingface.co/datasets/TIGER-Lab/ImagenWorld-condition-set">[💾 Datasets]</a> <a href = "https://huggingface.co/spaces/TIGER-Lab/ImagenWorld-Visualizer">[🏛️ ImagenWorld-Visualizer]</a>
 </div>
 
+## 📰 News
+* 2025 Oct 16: ComfyUI Blog on [https://blog.comfy.org/p/introducing-imagenworld](https://blog.comfy.org/p/introducing-imagenworld)
+* 2025 Oct 13: Preprint released on Github.
+
 ## 📖 Introduction
 
 This repository contains the code for the paper [ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks]().
@@ -30,10 +34,10 @@ In this paper, We introduce **ImagenWorld**, a large-scale, human-centric benchm
   <img src="https://github.com/TIGER-AI-Lab/ImagenWorld/blob/gh-pages/static/images/overview.PNG" alt="Teaser" width="70%"/>
 </p>
 
-# Inference Quick Start
+## 🚀 Quick Start — Inference
 
-> **Tasks:** `TIG` (Text→Image Generation), `TIE` (Text→Image Editing), `SRIG`, `SRIE`, `MRIG`, `MRIE`  
-> **Datasets:** assumes `ImagenWorld/<TASK>/...` layout (adjust `--task_path` as needed)
+**Tasks:** `TIG` (Text→Image Generation), `TIE` (Text→Image Editing), `SRIG`, `SRIE`, `MRIG`, `MRIE`  
+**Datasets:** assumes `ImagenWorld/<TASK>/...` layout (adjust `--task_path` as needed)
 
 ---
 
@@ -120,9 +124,7 @@ bash closed_models.sh
 In both scripts:
 - Set `BASE_PATH` → dataset root (e.g., `/path/to/ImagenWorld`)  
 - Define `TASK_MODELS` to map each task to a model  
-- Use environment variables for API keys (avoid hardcoding)
-
-
+- Set API keys for closed-source models 
 
 ## Citation
 
@@ -135,6 +137,8 @@ If you find our work useful for your research, please consider citing our paper:
   year         = {2025},
   doi          = {10.5281/zenodo.17344183},
   url          = {https://zenodo.org/records/17344183},
+  projectpage  = {https://tiger-ai-lab.github.io/ImagenWorld/},
+  blogpost     = {https://blog.comfy.org/p/introducing-imagenworld},
   note         = {Community-driven dataset and benchmark release, Temporarily archived on Zenodo while arXiv submission is under moderation review.},
 }
 ```
