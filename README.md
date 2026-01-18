@@ -135,3 +135,15 @@ If you find our work useful for your research, please consider citing our paper:
   note         = {Community-driven dataset and benchmark release, Temporarily archived on Zenodo while arXiv submission is under moderation review.},
 }
 ```
+
+```bibtex
+ @article{imagenworld2026,
+title={ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks},
+url={http://dx.doi.org/10.36227/techrxiv.176800878.82723313/v1},
+DOI={10.36227/techrxiv.176800878.82723313/v1},
+publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+author={Sani, Samin Mahdizadeh and Ku, Max and Jamali, Nima and Sani, Matina Mahdizadeh and Khoshtab, Paria and Sun, Wei-Chieh and Fazel, Parnian and Tam, Zhi Rui and Chong, Thomas and Chan, Edisy Kin Wai and Tsang, Donald Wai Tong and Hsu, Chiao-Wei and Lam, Ting Wai and Ng, Ho Yin Sam and Chu, Chiafeng and Mak, Chak-Wing and Wu, Keming and Wong, Hiu Tung and Ho, Yik Chun and Ruan, Chi and Li, Zhuofeng and Fang, I-Sheng and Yeh, Shih-Ying and Cheng, Ho Kei and Nie, Ping and Chen, Wenhu},
+year={2026},
+month=jan }
+```
+
