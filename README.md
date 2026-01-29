@@ -21,6 +21,7 @@ ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evalu
 </div>
 
 ## 📰 News
+* 2025 Jan 25: Accepted to ICLR 2026!
 * 2025 Oct 16: ComfyUI Blog on [https://blog.comfy.org/p/introducing-imagenworld](https://blog.comfy.org/p/introducing-imagenworld)
 * 2025 Oct 13: Preprint released on Github.
 
