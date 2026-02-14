@@ -125,6 +125,17 @@ In both scripts:
 If you find our work useful for your research, please consider citing our paper:
 
 ```bibtex
+@inproceedings{
+sani2026imagenworld,
+title={ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks},
+author={Samin Mahdizadeh Sani and Max Ku and Nima Jamali and Matina Mahdizadeh Sani and Paria Khoshtab and Wei-Chieh Sun and Parnian Fazel and Zhi Rui Tam and Thomas Chong and Edisy Kin Wai Chan and Donald Wai Tong Tsang and Chiao-Wei Hsu and Lam Ting Wai and Ho Yin Sam Ng and Chiafeng Chu and Chak-Wing Mak and Keming Wu and Hiu Tung Wong and Yik Chun Ho and Chi Ruan and Zhuofeng Li and I-Sheng Fang and Shih-Ying Yeh and Ho Kei Cheng and Ping Nie and Wenhu Chen},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=bld9g6jFh9}
+}
+```
+
+```bibtex
 @misc{imagenworld2025,
   title        = {ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks},
   author       = {Samin Mahdizadeh Sani and Max Ku and Nima Jamali and Matina Mahdizadeh Sani and Paria Khoshtab and Wei-Chieh Sun and Parnian Fazel and Zhi Rui Tam and Thomas Chong and Edisy Kin Wai Chan and Donald Wai Tong Tsang and Chiao-Wei Hsu and Ting Wai Lam and Ho Yin Sam Ng and Chiafeng Chu and Chak-Wing Mak and Keming Wu and Hiu Tung Wong and Yik Chun Ho and Chi Ruan and Zhuofeng Li and I-Sheng Fang and Shih-Ying Yeh and Ho Kei Cheng and Ping Nie and Wenhu Chen},
