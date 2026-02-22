@@ -135,6 +135,7 @@ url={https://openreview.net/forum?id=bld9g6jFh9}
 }
 ```
 
+<!--
 ```bibtex
 @misc{imagenworld2025,
   title        = {ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks},
@@ -158,4 +159,5 @@ author={Sani, Samin Mahdizadeh and Ku, Max and Jamali, Nima and Sani, Matina Mah
 year={2026},
 month=jan }
 ```
+-->
 
