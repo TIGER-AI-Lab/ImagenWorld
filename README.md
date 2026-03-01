@@ -1,8 +1,7 @@
 # 🖼️ ImagenWorld 
-[![Preprint](https://img.shields.io/badge/Preprint-Available-blue.svg)](https://github.com/TIGER-AI-Lab/ImagenWorld/blob/a3200b87c1714b106bf2c55daae346634a8e9cbf/static/preprint.pdf)
-
 ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks
 
+[ICLR Paper](https://openreview.net/forum?id=bld9g6jFh9)
 
 
 <p align="center">
