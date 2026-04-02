@@ -1,4 +1,6 @@
 # 🖼️ ImagenWorld 
+[![arXiv](https://img.shields.io/badge/arXiv-2310.01596-b31b1b.svg)](https://arxiv.org/abs/2603.27862)
+
 ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks
 
 [ICLR Paper](https://openreview.net/forum?id=bld9g6jFh9)
@@ -131,6 +133,16 @@ author={Samin Mahdizadeh Sani and Max Ku and Nima Jamali and Matina Mahdizadeh S
 booktitle={The Fourteenth International Conference on Learning Representations},
 year={2026},
 url={https://openreview.net/forum?id=bld9g6jFh9}
+}
+
+@misc{sani2026imagenworldstresstestingimagegeneration,
+      title={ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks}, 
+      author={Samin Mahdizadeh Sani and Max Ku and Nima Jamali and Matina Mahdizadeh Sani and Paria Khoshtab and Wei-Chieh Sun and Parnian Fazel and Zhi Rui Tam and Thomas Chong and Edisy Kin Wai Chan and Donald Wai Tong Tsang and Chiao-Wei Hsu and Ting Wai Lam and Ho Yin Sam Ng and Chiafeng Chu and Chak-Wing Mak and Keming Wu and Hiu Tung Wong and Yik Chun Ho and Chi Ruan and Zhuofeng Li and I-Sheng Fang and Shih-Ying Yeh and Ho Kei Cheng and Ping Nie and Wenhu Chen},
+      year={2026},
+      eprint={2603.27862},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2603.27862}, 
 }
 ```
 
